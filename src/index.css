@@ -14,4 +14,5 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-image: url('/public/images/cloud.jpg');
   background-size: cover;
+  background-repeat: no-repeat;
 }

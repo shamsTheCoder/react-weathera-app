@@ -8,6 +8,7 @@ import { CiGlobe } from 'react-icons/ci'
 
 const apiKey = process.env.REACT_APP_WEATHER_API_KEY;
 const city = 'hyderabad';
+const currentYear = new Date().getFullYear();
 
 function App() {
   const [temp, setTemp] = useState(null)
@@ -87,7 +88,13 @@ function App() {
             <p><WiWindy className='wt-icon' /> {wind} Km/h</p>
           </Col>
         </Row>
+
       </div>
+      <footer>
+        <Row xs='1' className='pt-5'>
+          <Col className='text-center text-dark'><p>&copy; Copyright {currentYear} shamsTheCoder</p></Col>
+        </Row>
+      </footer>
     </div>
   );
 }
