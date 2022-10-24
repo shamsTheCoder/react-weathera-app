@@ -81,7 +81,7 @@ function App() {
             <p className='temp_val mt-3'>{temp}<sup className='degree'>&#176;C</sup></p>
           </Col>
           <Col className='details'>
-            <h6><img src={`http://openweathermap.org/img/wn/${icon}.png`}></img> {description}</h6>
+            <h6><img src={`http://openweathermap.org/img/wn/${icon}.png`} alt='weather icon'></img> {description}</h6>
             <p><WiHumidity className='wt-icon' /> {humidity}%</p>
             <p><CiGlobe className='wt-icon' /> {country}</p>
             <p><WiWindy className='wt-icon' /> {wind} Km/h</p>
